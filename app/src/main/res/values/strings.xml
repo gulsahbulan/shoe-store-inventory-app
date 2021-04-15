@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="logout">logout</string>
+    <string name="loginFragmentTitle">Login</string>
+    <string name="welcomeFragmentTitle">Welcome</string>
+    <string name="instructionFragmentTitle">Instructions</string>
+    <string name="shoeListFragmentTitle">Shoes</string>
+    <string name="shoeDetailFragmentTitle">Add a Shoe</string>
 </resources>
