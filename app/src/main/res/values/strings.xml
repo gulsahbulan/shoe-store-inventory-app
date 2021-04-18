@@ -6,4 +6,15 @@
     <string name="instructionFragmentTitle">Instructions</string>
     <string name="shoeListFragmentTitle">Shoes</string>
     <string name="shoeDetailFragmentTitle">Add a Shoe</string>
+    <string name="add_icon">Add a Shoe</string>
+    <string name="brand">Brand</string>
+    <string name="name">Name</string>
+    <string name="size">Size</string>
+    <string name="color">Color</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="brand_hint">Michael Kors</string>
+    <string name="name_hint">Loafer</string>
+    <string name="size_hint">8.5</string>
+    <string name="color_hint">Black</string>
 </resources>

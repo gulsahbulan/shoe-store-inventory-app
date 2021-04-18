@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="shoe"
+            type="com.gbulan.shoestore.model.Shoe" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp">
+
+        <!-- ConstraintLayout allows to build more complex structures while
+        maintaining a flat structure of views.-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_shoe_brand"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@{shoe.brand}"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Michael Kors" />
+
+            <View
+                android:id="@+id/view_divider"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintStart_toEndOf="@+id/tv_shoe_brand"
+                app:layout_constraintTop_toTopOf="@+id/tv_shoe_brand" />
+
+            <TextView
+                android:id="@+id/tv_shoe_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{shoe.name}"
+                app:layout_constraintStart_toEndOf="@+id/view_divider"
+                app:layout_constraintTop_toTopOf="@+id/view_divider"
+                tools:text="Loafer" />
+
+            <TextView
+                android:id="@+id/tv_shoe_color"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@{shoe.color + `,`}"
+                app:layout_constraintStart_toStartOf="@+id/tv_shoe_brand"
+                app:layout_constraintTop_toBottomOf="@+id/tv_shoe_brand"
+                tools:text="Black," />
+
+            <TextView
+                android:id="@+id/tv_shoe_size"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@{`Size ` + shoe.size}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_shoe_color"
+                app:layout_constraintTop_toBottomOf="@+id/tv_shoe_brand"
+                app:layout_constraintTop_toTopOf="@+id/tv_shoe_color"
+                tools:text="Size 8.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
