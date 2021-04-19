@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/textColorPrimary</item>
@@ -8,14 +8,9 @@
         <item name="colorOnSecondary">@color/textColorPrimary</item>
         <item name="colorAccent">@color/colorPrimaryDark</item>
         <item name="colorSurface">@color/colorSurface</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
-        <item name="actionBarTheme">@style/ThemeOverlay.ShoeStore.ActionBar</item>
-        <item name="android:textViewStyle">@style/TextAppearance.MaterialComponents.Body1</item>
         <item name="materialCardViewStyle">@style/Widget.ShoeStore.CardView</item>
-    </style>
-
-    <style name="ThemeOverlay.ShoeStore.ActionBar" parent="ThemeOverlay.MaterialComponents.ActionBar">
-        <item name="android:textColorPrimary">@color/textColorPrimary</item>
     </style>
 
     <style name="Widget.ShoeStore.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
@@ -32,4 +27,22 @@
         <item name="cardElevation">4dp</item>
         <item name="cardCornerRadius">8dp</item>
     </style>
+
+    <style name="TextAppearance.ShoeStore.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.ShoeStore.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.ShoeStore.TextInputLayout.HintText
+        </item>
+        <item name="hintTextColor">@color/textColorPrimary</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.ShoeStore.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
 </resources>

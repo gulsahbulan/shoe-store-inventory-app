@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">ShoeStore</string>
     <string name="logout">logout</string>
-    <string name="loginFragmentTitle">Login</string>
-    <string name="welcomeFragmentTitle">Welcome</string>
-    <string name="instructionFragmentTitle">Instructions</string>
-    <string name="shoeListFragmentTitle">Shoes</string>
-    <string name="shoeDetailFragmentTitle">Add a Shoe</string>
-    <string name="add_icon">Add a Shoe</string>
+    <string name="shoeListFragment_title">Shoes</string>
+    <string name="shoeDetailFragment_title">Add a Shoe</string>
+    <string name="add_icon_content_description">Button to add a shoe</string>
+    <string name="fwd_arrow_icon_content_description">Button to view instructions page</string>
     <string name="brand">Brand</string>
     <string name="name">Name</string>
     <string name="size">Size</string>
@@ -17,4 +15,15 @@
     <string name="name_hint">Loafer</string>
     <string name="size_hint">8.5</string>
     <string name="color_hint">Black</string>
+    <string name="logo_content_description">Shoe Store Logo</string>
+    <string name="sign_up_btn_text">Don\'t have an account? Sign Up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="app_title">Shoe Store</string>
+    <string name="welcome">Welcome</string>
+    <string name="discover">Tap to see more options!</string>
+    <string name="instructions_title">Add your shoes</string>
+    <string name="instructions">Add your shoes just in few simple steps and view them in a list!</string>
+    <string name="discover_btn_text">Let\'s Get Started</string>
 </resources>

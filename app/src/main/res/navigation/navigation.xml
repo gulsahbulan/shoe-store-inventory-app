@@ -2,13 +2,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
     app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.gbulan.shoestore.ui.fragment.LoginFragment"
-        android:label="@string/loginFragmentTitle"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
@@ -19,7 +17,7 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.gbulan.shoestore.ui.fragment.WelcomeFragment"
-        android:label="@string/welcomeFragmentTitle"
+        android:label="@string/app_title"
         tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcomeFragment_to_instructionFragment"
@@ -28,7 +26,7 @@
     <fragment
         android:id="@+id/instructionFragment"
         android:name="com.gbulan.shoestore.ui.fragment.InstructionFragment"
-        android:label="@string/instructionFragmentTitle"
+        android:label="@string/app_title"
         tools:layout="@layout/fragment_instruction">
         <action
             android:id="@+id/action_instructionFragment_to_shoeListFragment"
@@ -39,7 +37,7 @@
     <fragment
         android:id="@+id/shoeListFragment"
         android:name="com.gbulan.shoestore.ui.fragment.ShoeListFragment"
-        android:label="@string/shoeListFragmentTitle"
+        android:label="@string/shoeListFragment_title"
         tools:layout="@layout/fragment_shoe_list">
         <action
             android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
@@ -53,7 +51,7 @@
     <fragment
         android:id="@+id/shoeDetailFragment"
         android:name="com.gbulan.shoestore.ui.fragment.ShoeDetailFragment"
-        android:label="@string/shoeDetailFragmentTitle"
+        android:label="@string/shoeDetailFragment_title"
         tools:layout="@layout/fragment_shoe_detail">
         <action
             android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"

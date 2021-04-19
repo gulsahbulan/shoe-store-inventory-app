@@ -30,6 +30,11 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
         val action = LoginFragmentDirections.actionLoginFragmentToWelcomeFragment()
-        binding.btnLogin.setOnClickListener { navController.navigate(action) }
+        binding.btnSignIn.setOnClickListener {
+            navController.navigate(action)
+        }
+        binding.btnSignUp.setOnClickListener {
+            navController.navigate(action)
+        }
     }
 }
