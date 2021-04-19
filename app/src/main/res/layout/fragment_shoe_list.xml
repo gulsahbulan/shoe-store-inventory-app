@@ -9,8 +9,8 @@
             name="sharedViewModel"
             type="com.gbulan.shoestore.ui.viewmodel.SharedViewModel" />
     </data>
-    <!-- I preferred ConstraintLayout since
-    ConstraintLayout helps you to avoid using nested layouts and it causes better performance. -->
+    <!-- ConstraintLayout allows to build more complex structures while
+      maintaining a flat structure of views.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +24,7 @@
                 android:id="@+id/shoeList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="@dimen/margin_small"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -37,10 +37,10 @@
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_large"
             android:clickable="true"
-            android:contentDescription="@string/add_icon"
+            android:contentDescription="@string/add_icon_content_description"
             android:focusable="true"
             android:onClick="@{() -> sharedViewModel.navigate()}"
             android:src="@drawable/ic_add"

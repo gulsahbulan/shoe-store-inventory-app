@@ -14,14 +14,14 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="@dimen/padding">
 
             <ImageView
                 android:id="@+id/iv_app_logo"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="64dp"
-                android:layout_marginBottom="16dp"
+                android:layout_width="@dimen/logo_size"
+                android:layout_height="@dimen/logo_size"
+                android:layout_marginTop="@dimen/iv_logo_margin_top"
+                android:layout_marginBottom="@dimen/margin_large"
                 android:contentDescription="@string/logo_content_description"
                 app:srcCompat="@drawable/ic_footprints"
                 app:tint="@color/textColorPrimary" />

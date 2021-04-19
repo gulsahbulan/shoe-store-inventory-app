@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_size">100dp</dimen>
+    <dimen name="padding">24dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="iv_logo_margin_top">64dp</dimen>
+    <dimen name="tv_text_input_width">120dp</dimen>
+    <dimen name="btn_save_margin_top">32dp</dimen>
+    <dimen name="btn_discover_margin_bottom">32dp</dimen>
+    <dimen name="view_divider_width">2dp</dimen>
+    <dimen name="view_divider_height">20dp</dimen>
+    <dimen name="constraint_guide_begin">24dp</dimen>
+    <dimen name="constraint_guide_end">24dp</dimen>
+</resources>

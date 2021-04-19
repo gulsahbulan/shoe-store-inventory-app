@@ -13,10 +13,10 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="4dp">
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_small">
 
         <!-- ConstraintLayout allows to build more complex structures while
         maintaining a flat structure of views.-->
@@ -28,19 +28,20 @@
                 android:id="@+id/tv_shoe_brand"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
                 android:text="@{shoe.brand}"
                 android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Michael Kors" />
 
             <View
                 android:id="@+id/view_divider"
-                android:layout_width="2dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="8dp"
+                android:layout_width="@dimen/view_divider_width"
+                android:layout_height="@dimen/view_divider_height"
+                android:layout_marginStart="@dimen/margin_normal"
                 android:background="@color/colorPrimaryDark"
                 app:layout_constraintStart_toEndOf="@+id/tv_shoe_brand"
                 app:layout_constraintTop_toTopOf="@+id/tv_shoe_brand" />
@@ -49,8 +50,9 @@
                 android:id="@+id/tv_shoe_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="@dimen/margin_normal"
                 android:text="@{shoe.name}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 app:layout_constraintStart_toEndOf="@+id/view_divider"
                 app:layout_constraintTop_toTopOf="@+id/view_divider"
                 tools:text="Loafer" />
@@ -59,8 +61,9 @@
                 android:id="@+id/tv_shoe_color"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_normal"
                 android:text="@{shoe.color + `,`}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 app:layout_constraintStart_toStartOf="@+id/tv_shoe_brand"
                 app:layout_constraintTop_toBottomOf="@+id/tv_shoe_brand"
                 tools:text="Black," />
@@ -69,9 +72,10 @@
                 android:id="@+id/tv_shoe_size"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
                 android:text="@{`Size ` + shoe.size}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/tv_shoe_color"
                 app:layout_constraintTop_toBottomOf="@+id/tv_shoe_brand"

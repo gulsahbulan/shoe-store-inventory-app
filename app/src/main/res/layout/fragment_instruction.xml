@@ -14,7 +14,7 @@
             android:id="@+id/tv_instructions_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/margin_large"
             android:gravity="center"
             android:text="@string/instructions_title"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -45,7 +45,7 @@
             android:id="@+id/btn_discover"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="@dimen/btn_discover_margin_bottom"
             android:text="@string/discover_btn_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/right_guideline"
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="24dp" />
+            app:layout_constraintGuide_begin="@dimen/constraint_guide_begin" />
 
         <!-- Guideline for end margin -->
         <androidx.constraintlayout.widget.Guideline
@@ -65,6 +65,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_end="24dp" />
+            app:layout_constraintGuide_end="@dimen/constraint_guide_end" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
